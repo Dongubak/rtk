@@ -4,7 +4,8 @@ WTRTK-982 (Unicore UM982) 설정 복구 + 정상 NMEA 출력
 import serial
 import time
 
-COM = '/dev/tty.usbserial-130'   # 실제 포트로 맞출 것
+# COM = '/dev/tty.usbserial-130'   # 실제 포트로 맞출 것
+COM = '/dev/tty.usbserial-2130'
 BPS = 460800                     # set_baud.py 실행 후 (이전: 115200)
 
 COMMANDS = [

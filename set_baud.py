@@ -9,7 +9,8 @@ RTK Fixed 가 불가능하다. 한 번만 실행하면 SAVECONFIG 로 영구 반
 import serial
 import time
 
-COM      = '/dev/tty.usbserial-130'   # 실제 포트로 맞출 것
+# COM      = '/dev/tty.usbserial-130'   # 실제 포트로 맞출 것
+COM = '/dev/tty.usbserial-2130'
 OLD_BPS  = 115200
 NEW_BPS  = 460800
 

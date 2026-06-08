@@ -6,7 +6,8 @@ import threading
 
 # ── 설정 ──────────────────────────────────────────
 # COM       = '/dev/tty.usbserial-1440'        # Linux: /dev/ttyUSB0, Windows: COM15
-COM = '/dev/tty.usbserial-130'
+# COM = '/dev/tty.usbserial-130'
+COM = '/dev/tty.usbserial-2130'
 BPS       = 460800          # set_baud.py 로 수신기 속도 변경 후 사용 (115200 은 보정량 초과로 RTK 불가)
 NtripIP    = 'RTS1.ngii.go.kr'
 NtripPort  = 2101
