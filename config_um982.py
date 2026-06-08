@@ -4,8 +4,8 @@ WTRTK-982 (Unicore UM982) 설정 복구 + 정상 NMEA 출력
 import serial
 import time
 
-COM = '/dev/tty.usbserial-1440'
-BPS = 115200
+COM = '/dev/tty.usbserial-130'   # 실제 포트로 맞출 것
+BPS = 460800                     # set_baud.py 실행 후 (이전: 115200)
 
 COMMANDS = [
     # 1. 잘못된 MASK 해제 — 모든 GNSS 다시 활성화

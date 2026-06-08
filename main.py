@@ -2,10 +2,12 @@ import socket
 import base64
 import serial
 import time
+import threading
 
 # ── 설정 ──────────────────────────────────────────
-COM       = '/dev/tty.usbserial-1440'        # Linux: /dev/ttyUSB0, Windows: COM15
-BPS       = 115200
+# COM       = '/dev/tty.usbserial-1440'        # Linux: /dev/ttyUSB0, Windows: COM15
+COM = '/dev/tty.usbserial-130'
+BPS       = 460800          # set_baud.py 로 수신기 속도 변경 후 사용 (115200 은 보정량 초과로 RTK 불가)
 NtripIP    = 'RTS1.ngii.go.kr'
 NtripPort  = 2101
 NtripUser  = 'hyuk6578'
@@ -61,39 +63,52 @@ if "200 OK" not in resp and "ICY 200 OK" not in resp:
 ntrip.send(strGNGGA.encode())
 print("✅ NTRIP 접속 성공. RTCM 수신 시작...")
 
-# 3. 메인 루프
+# 3. RTCM 보정 전달 스레드 (도착 즉시 모듈로 흘려보내 latency 최소화)
+def rtcm_forwarder():
+    while True:
+        try:
+            rtcm = ntrip.recv(4096)
+            if rtcm:
+                RTK.write(rtcm)
+            else:
+                # recv가 빈 바이트 → 서버가 연결 종료
+                print("⚠️  NTRIP 연결이 서버에 의해 종료됨")
+                break
+        except socket.timeout:
+            continue
+        except Exception as e:
+            print(f"⚠️  RTCM 수신 오류: {e}")
+            break
+
+threading.Thread(target=rtcm_forwarder, daemon=True).start()
+
+# 4. 메인 루프 — NMEA 읽기(Fixed 상태 모니터링)만 담당
 gga_timer = time.time()
 
 while True:
-    # RTCM 수신 → RTK 모듈로 전달
-    try:
-        rtcm = ntrip.recv(4096)
-        if rtcm:
-            RTK.write(rtcm)
-    except socket.timeout:
-        pass
-
-    # NMEA 읽기 (Fixed 상태 모니터링)
     nmea = RTK.readline()
-    if nmea:
-        try:
-            line = nmea.decode("ascii", errors="ignore").strip()
-            if "$GNGGA" in line or "$GPGGA" in line:
-                seg = line.split(',')
-                fix_type = seg[6] if len(seg) > 6 else '?'
-                # fix_type: 0=없음, 1=GPS, 2=DGPS, 4=RTK Fixed, 5=RTK Float
-                status = {
-                    '0': '❌ No Fix',
-                    '1': '🟡 GPS only',
-                    '2': '🔵 DGPS (보정 적용중)',
-                    '4': '✅ RTK Fixed',
-                    '5': '🟠 RTK Float'
-                }.get(fix_type, f'? ({fix_type})')
-                print(f"상태: {status}")
+    if not nmea:
+        continue
+    try:
+        line = nmea.decode("ascii", errors="ignore").strip()
+        if "$GNGGA" in line or "$GPGGA" in line:
+            seg = line.split(',')
+            fix_type = seg[6] if len(seg) > 6 else '?'
+            num_sat = seg[7] if len(seg) > 7 else '?'
+            hdop    = seg[8] if len(seg) > 8 else '?'
+            # fix_type: 0=없음, 1=GPS, 2=DGPS, 4=RTK Fixed, 5=RTK Float
+            status = {
+                '0': '❌ No Fix',
+                '1': '🟡 GPS only',
+                '2': '🔵 DGPS (보정 적용중)',
+                '4': '✅ RTK Fixed',
+                '5': '🟠 RTK Float'
+            }.get(fix_type, f'? ({fix_type})')
+            print(f"상태: {status} | 위성 {num_sat}개 | HDOP {hdop}")
 
-                # 30초마다 GGA 재전송 (서버 연결 유지)
-                if time.time() - gga_timer > 30:
-                    ntrip.send((line + "\r\n").encode())
-                    gga_timer = time.time()
-        except:
-            pass
+            # 10초마다 GGA 재전송 (VRS가 가상기준국을 최신 위치로 유지)
+            if time.time() - gga_timer > 10:
+                ntrip.send((line + "\r\n").encode())
+                gga_timer = time.time()
+    except Exception:
+        pass

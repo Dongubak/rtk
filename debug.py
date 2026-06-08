@@ -5,8 +5,9 @@ import time
 from collections import Counter
 
 # ── 설정 ──────────────────────────────────────────
-COM        = '/dev/tty.usbserial-1440'
-BPS        = 115200
+# COM        = '/dev/tty.usbserial-1440'
+COM = '/dev/tty.usbserial-130'
+BPS        = 460800          # set_baud.py 실행 후 (이전: 115200)
 NtripIP    = 'RTS1.ngii.go.kr'
 NtripPort  = 2101
 NtripUser  = 'hyuk6578'
