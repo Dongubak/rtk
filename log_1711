@@ -1,0 +1,563 @@
+   ~/rtk  on   main !4                                                                                                                                         1 ✘  base   at 17:09:46  
+╰─ python debug.py
+RTK 모듈 연결됨. GGA 대기 중...
+
+[NMEA] $GNGGA,081007.00,3728.49542091,N,12653.22602957,E,5,17,1.0,17.6257,M,22.5853,M,35.0,2275*5A
+
+✅ GGA 확보: $GNGGA,081007.00,3728.49542091,N,12653.22602957,E,5,17,1.0,17.6257,M,22.5853,M,35.0,2275*5A
+
+NTRIP 접속: RTS1.ngii.go.kr:2101/VRS-RTCM34
+서버 응답: ICY 200 OK
+✅ NTRIP 접속 성공. 메시지 모니터링 시작...
+
+============================================================
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[RTCM] type 4094  ?
+[RTCM] type 1032  ?
+[RTCM] type 4094  ?
+[RTCM] type 1125  BeiDou MSM5
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+
+>>> 상태 변경: 🟠 RTK Float
+
+[NMEA] GGA  fix=🟠 RTK Float  sats=17  HDOP=1.0
+[RTCM] type 4094  ?
+[RTCM] type 1030  ?
+[RTCM] type 1031  ?
+[RTCM] type 1304  ?
+[RTCM] type 1303  ?
+[NMEA] $GNGSA,M,3,05,24,21,,,,,,,,,,1.7,1.0,1.4,1*3F
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNGSA,M,3,73,,,,,,,,,,,,1.7,1.0,1.4,2*38
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GNGSA,M,3,28,33,04,,,,,,,,,,1.7,1.0,1.4,3*33
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNGSA,M,3,02,03,07,34,22,26,04,39,,,,,1.7,1.0,1.4,4*31
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GNGSA,M,3,03,07,,,,,,,,,,,1.7,1.0,1.4,5*3F
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNRMC,081007.00,A,3728.49542091,N,12653.22602957,E,0.008,192.7,090626,8.9,W,F,C*54
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GPGSV,1,1,03,05,50,090,46,24,43,184,47,21,20,101,32,1*53
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GPGSV,1,1,02,05,50,090,41,24,43,184,38,4*68
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[RTCM] type 4094  ?
+[RTCM] type 1032  ?
+[NMEA] $GPGSV,1,1,02,24,43,184,45,21,20,101,29,8*68
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GLGSV,1,1,02,86,54,229,47,73,26,106,35,1*7E
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[RTCM] type 4094  ?
+[NMEA] $GLGSV,1,1,03,70,12,059,30,86,54,229,44,73,26,106,44,3*43
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,1,12,01,44,159,24,02,26,242,41,03,45,206,44,07,30,178,33,1*76
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1030  ?
+[RTCM] type 1031  ?
+[RTCM] type 1304  ?
+[RTCM] type 1303  ?
+[NMEA] $GBGSV,3,2,12,34,39,241,45,22,30,066,47,26,11,167,33,04,37,130,47,1*7A
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,3,12,39,31,111,33,08,11,200,28,10,19,183,23,36,20,058,25,1*73
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,1,12,01,44,159,32,02,26,242,39,03,45,206,37,07,30,178,27,8*76
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,2,12,34,39,241,43,22,30,066,41,26,11,167,28,04,37,130,43,8*7D
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,3,12,39,31,111,37,08,11,200,21,10,19,183,18,36,20,058,14,8*7D
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,1,1,01,10,19,183,22,B*37
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[NMEA] $GAGSV,1,1,04,19,75,274,25,28,46,242,37,33,58,165,35,04,22,239,33,1*70
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,2,1,05,19,75,274,29,28,46,242,43,33,58,165,44,04,22,239,37,2*7C
+
+────────────────────────────────────────────────────────────
+📊 10초 요약  (RTCM 누적: 14,678 bytes)
+   NMEA: {'$GNGGA': 1, '$GNGSA': 5, '$GNRMC': 1, '$GPGSV': 3, '$GLGSV': 2, '$GBGSV': 7, '$GAGSV': 2}
+   RTCM types: {1007: 3, 1033: 3, 1005: 2, 1230: 2, 4094: 16, 1032: 2, 1125: 11, 1115: 10, 1095: 10, 1085: 10, 1075: 10, 1030: 2, 1031: 2, 1304: 2, 1303: 2}
+────────────────────────────────────────────────────────────
+
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[NMEA] $GAGSV,2,2,05,26,10,149,21,2*49
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,2,1,05,19,75,274,30,28,46,242,45,33,58,165,42,04,22,239,35,7*73
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GAGSV,2,2,05,26,10,149,22,7*4F
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GQGSV,1,1,02,03,56,168,46,07,46,179,35,1*66
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GQGSV,1,1,02,03,56,168,39,07,46,179,39,6*65
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GQGSV,1,1,02,03,56,168,38,07,46,179,37,8*64
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] GGA  fix=🟠 RTK Float  sats=18  HDOP=0.9
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] GGA  fix=🟠 RTK Float  sats=18  HDOP=0.9
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[RTCM] type 4094  ?
+[RTCM] type 1032  ?
+[RTCM] type 1030  ?
+[RTCM] type 1031  ?
+[RTCM] type 1304  ?
+[RTCM] type 1303  ?
+[NMEA] $GNGSA,M,3,05,24,21,,,,,,,,,,1.6,0.9,1.3,1*31
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNGSA,M,3,73,,,,,,,,,,,,1.6,0.9,1.3,2*36
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[RTCM] type 4094  ?
+[NMEA] $GNGSA,M,3,19,28,33,04,,,,,,,,,1.6,0.9,1.3,3*35
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNGSA,M,3,02,03,07,34,22,26,04,39,,,,,1.6,0.9,1.3,4*3F
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GNGSA,M,3,03,07,,,,,,,,,,,1.6,0.9,1.3,5*31
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNRMC,081008.00,A,3728.49542132,N,12653.22602982,E,0.006,183.4,090626,8.9,W,F,C*56
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GPGSV,1,1,03,05,50,090,46,24,43,184,47,21,20,101,31,1*50
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GPGSV,1,1,02,05,50,090,41,24,43,184,38,4*68
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GPGSV,1,1,02,24,43,184,45,21,20,101,29,8*68
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GLGSV,1,1,02,86,54,229,47,73,26,106,36,1*7D
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[NMEA] $GLGSV,1,1,03,70,12,059,30,86,54,229,44,73,26,106,44,3*43
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,1,12,01,44,159,23,02,26,242,41,03,45,206,44,07,30,178,32,1*70
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,2,12,34,39,241,46,22,30,066,47,26,11,167,34,04,37,130,48,1*71
+
+────────────────────────────────────────────────────────────
+📊 10초 요약  (RTCM 누적: 29,796 bytes)
+   NMEA: {'$GNGGA': 3, '$GNGSA': 10, '$GNRMC': 2, '$GPGSV': 6, '$GLGSV': 4, '$GBGSV': 9, '$GAGSV': 5, '$GQGSV': 3}
+   RTCM types: {1007: 5, 1033: 5, 1005: 5, 1230: 5, 4094: 32, 1032: 3, 1125: 21, 1115: 21, 1095: 21, 1085: 21, 1075: 21, 1030: 3, 1031: 3, 1304: 3, 1303: 3}
+────────────────────────────────────────────────────────────
+
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,3,12,39,31,111,34,08,11,200,29,10,19,183,25,36,20,058,26,1*70
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,1,12,01,44,159,32,02,26,242,39,03,45,206,36,07,30,178,27,8*77
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,2,12,34,39,241,43,22,30,066,41,26,11,167,28,04,37,130,42,8*7C
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1030  ?
+[RTCM] type 1031  ?
+[RTCM] type 1304  ?
+[RTCM] type 1303  ?
+[NMEA] $GBGSV,3,3,12,39,31,111,36,08,11,200,21,10,19,183,18,36,20,058,14,8*7C
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,1,1,04,19,75,274,25,28,46,242,37,33,58,165,34,04,22,239,33,1*71
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GAGSV,2,1,05,19,75,274,29,28,46,242,43,33,58,165,44,04,22,239,36,2*7D
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,2,2,05,26,10,149,21,2*49
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[RTCM] type 4094  ?
+[RTCM] type 1032  ?
+[NMEA] $GAGSV,2,1,05,19,75,274,31,28,46,242,46,33,58,165,42,04,22,239,36,7*72
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,2,2,05,26,10,149,21,7*4C
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[RTCM] type 4094  ?
+[NMEA] $GQGSV,1,1,02,03,56,168,46,07,46,179,35,1*66
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GQGSV,1,1,02,03,56,168,40,07,46,179,38,6*6A
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GQGSV,1,1,02,03,56,168,38,07,46,179,37,8*64
+[RTCM] type 1125  BeiDou MSM5
+
+>>> 상태 변경: 🔵 DGPS
+
+[NMEA] GGA  fix=🔵 DGPS  sats=11  HDOP=1.6
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] GGA  fix=🔵 DGPS  sats=11  HDOP=1.6
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNGSA,M,3,05,21,24,,,,,,,,,,2.3,1.6,1.7,1*3D
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GNGSA,M,3,04,19,28,33,,,,,,,,,2.3,1.6,1.7,3*39
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNGSA,M,3,22,36,39,,,,,,,,,,2.3,1.6,1.7,4*37
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[NMEA] $GNGSA,M,3,03,,,,,,,,,,,,2.3,1.6,1.7,5*3A
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNRMC,081009.00,A,3728.50003888,N,12653.22715052,E,0.007,177.2,090626,9.0,W,D,C*52
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[RTCM] type 1030  ?
+[RTCM] type 1031  ?
+[RTCM] type 1304  ?
+[RTCM] type 1303  ?
+[NMEA] $GPGSV,1,1,04,05,50,090,46,24,43,184,47,21,20,101,31,23,22,304,33,1*61
+
+────────────────────────────────────────────────────────────
+📊 10초 요약  (RTCM 누적: 43,647 bytes)
+   NMEA: {'$GNGGA': 5, '$GNGSA': 14, '$GNRMC': 3, '$GPGSV': 7, '$GLGSV': 4, '$GBGSV': 13, '$GAGSV': 10, '$GQGSV': 6}
+   RTCM types: {1007: 7, 1033: 7, 1005: 7, 1230: 7, 4094: 46, 1032: 4, 1125: 31, 1115: 31, 1095: 31, 1085: 31, 1075: 31, 1030: 5, 1031: 5, 1304: 5, 1303: 5}
+────────────────────────────────────────────────────────────
+
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GPGSV,1,1,02,05,50,090,40,24,43,184,37,4*66
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GPGSV,1,1,02,24,43,184,45,21,20,101,29,8*68
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GLGSV,1,1,02,86,54,229,47,73,26,106,37,1*7C
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GLGSV,1,1,03,70,12,059,31,86,54,229,44,73,26,106,44,3*42
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,1,11,02,26,242,41,03,45,206,44,07,30,178,31,34,39,241,46,1*75
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,2,11,22,30,066,47,26,11,167,35,04,37,130,48,39,31,111,34,1*75
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,3,11,08,11,200,29,10,19,183,25,36,20,058,25,1*4E
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[RTCM] type 4094  ?
+[RTCM] type 1032  ?
+[NMEA] $GBGSV,3,1,12,01,44,159,32,02,26,242,39,03,45,206,36,07,30,178,27,8*77
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,2,12,34,39,241,43,22,30,066,41,26,11,167,28,04,37,130,42,8*7C
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,3,12,39,31,111,36,08,11,200,21,10,19,183,18,36,20,058,14,8*7C
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,1,1,04,19,75,274,25,28,46,242,37,33,58,165,35,04,22,239,33,1*70
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GAGSV,2,1,05,19,75,274,29,28,46,242,43,33,58,165,44,04,22,239,36,2*7D
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,2,2,05,26,10,149,22,2*4A
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GAGSV,1,1,04,19,75,274,31,28,46,242,46,33,58,165,43,04,22,239,36,7*71
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GQGSV,1,1,02,03,56,168,46,07,46,179,35,1*66
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1030  ?
+[RTCM] type 1031  ?
+[RTCM] type 1304  ?
+[RTCM] type 1303  ?
+[NMEA] $GQGSV,1,1,02,03,56,168,39,07,46,179,38,6*64
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GQGSV,1,1,02,03,56,168,38,07,46,179,37,8*64
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[NMEA] GGA  fix=🔵 DGPS  sats=07  HDOP=2.3
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] GGA  fix=🔵 DGPS  sats=07  HDOP=2.3
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[NMEA] $GNGSA,M,3,05,24,,,,,,,,,,,3.7,2.3,2.9,1*30
+
+────────────────────────────────────────────────────────────
+📊 10초 요약  (RTCM 누적: 57,032 bytes)
+   NMEA: {'$GNGGA': 7, '$GNGSA': 15, '$GNRMC': 3, '$GPGSV': 9, '$GLGSV': 6, '$GBGSV': 19, '$GAGSV': 14, '$GQGSV': 9}
+   RTCM types: {1007: 9, 1033: 9, 1005: 9, 1230: 9, 4094: 60, 1032: 5, 1125: 41, 1115: 41, 1095: 41, 1085: 41, 1075: 41, 1030: 6, 1031: 6, 1304: 6, 1303: 6}
+────────────────────────────────────────────────────────────
+
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNGSA,M,3,04,19,28,33,,,,,,,,,3.7,2.3,2.9,3*37
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GNGSA,M,3,03,,,,,,,,,,,,3.7,2.3,2.9,5*34
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GNRMC,081010.00,A,3728.49952451,N,12653.22581552,E,0.006,186.2,090626,8.9,W,D,C*5A
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GPGSV,1,1,04,05,50,090,45,24,43,184,47,21,20,101,31,23,22,304,33,1*62
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GPGSV,1,1,02,05,50,090,41,24,43,184,38,4*68
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GPGSV,1,1,02,24,43,184,45,21,20,101,29,8*68
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GLGSV,1,1,02,86,54,229,47,73,26,106,37,1*7C
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[RTCM] type 4094  ?
+[RTCM] type 1032  ?
+[NMEA] $GLGSV,1,1,03,70,12,059,31,86,54,229,44,73,26,106,44,3*42
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,1,12,01,44,159,25,02,26,242,40,03,45,206,44,07,30,178,31,1*74
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,2,12,34,39,241,46,22,30,066,47,26,11,167,35,04,37,130,48,1*70
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,3,12,39,31,111,34,08,11,200,29,10,19,183,23,36,20,058,25,1*75
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1030  ?
+[RTCM] type 1031  ?
+[RTCM] type 1304  ?
+[RTCM] type 1303  ?
+[NMEA] $GBGSV,3,1,12,01,44,159,32,02,26,242,39,03,45,206,36,07,30,178,27,8*77
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,3,2,12,34,39,241,43,22,30,066,41,26,11,167,28,04,37,130,43,8*7D
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GBGSV,3,3,12,39,31,111,36,08,11,200,21,10,19,183,18,36,20,058,13,8*7B
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GBGSV,1,1,01,10,19,183,25,B*30
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[NMEA] $GAGSV,1,1,04,19,75,274,25,28,46,242,37,33,58,165,34,04,22,239,33,1*71
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,2,1,05,19,75,274,29,28,46,242,43,33,58,165,44,04,22,239,36,2*7D
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1007  Antenna descriptor
+[RTCM] type 1033  Receiver/antenna descriptor
+[NMEA] $GAGSV,2,2,05,26,10,149,22,2*4A
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GAGSV,2,1,05,19,75,274,31,28,46,242,46,33,58,165,42,04,22,239,36,7*72
+[RTCM] type 1115  ?
+[RTCM] type 1095  Galileo MSM5
+[RTCM] type 1085  GLONASS MSM5
+[RTCM] type 1075  GPS MSM5
+[RTCM] type 4094  ?
+[RTCM] type 1005  Station coord ARP
+[RTCM] type 1230  GLONASS L1/L2 code-phase biases
+[RTCM] type 4094  ?
+[NMEA] $GAGSV,2,2,05,26,10,149,20,7*4D
+[RTCM] type 1125  BeiDou MSM5
+[NMEA] $GQGSV,1,1,02,03,56,168,46,07,46,179,35,1*66
+
+────────────────────────────────────────────────────────────
+📊 10초 요약  (RTCM 누적: 70,385 bytes)
+   NMEA: {'$GNGGA': 7, '$GNGSA': 17, '$GNRMC': 4, '$GPGSV': 12, '$GLGSV': 8, '$GBGSV': 26, '$GAGSV': 19, '$GQGSV': 10}
+   RTCM types: {1007: 11, 1033: 11, 1005: 11, 1230: 11, 4094: 74, 1032: 6, 1125: 52, 1115: 51, 1095: 51, 1085: 51, 1075: 51, 1030: 7, 1031: 7, 1304: 7, 1303: 7}

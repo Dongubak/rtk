@@ -1,0 +1,494 @@
+RTK 모듈 연결됨. GGA 대기 중...
+GGA 수신: $GNGGA,084406.00,3728.56643809,N,12653.20802797,E,5,29,0.6,13.5275,M,22.5846,M,109.0,2569*6C
+NTRIP 서버 접속 중: RTS1.ngii.go.kr:2101/VRS-RTCM34
+서버 응답: ICY 200 OK
+
+
+✅ NTRIP 접속 성공. RTCM 수신 시작...
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 13개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 13개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 13개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 13개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 13개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 13개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 12개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 12개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 12개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 12개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 14개 | HDOP 1.0
+상태: 🔵 DGPS (보정 적용중) | 위성 14개 | HDOP 1.0
+상태: 🔵 DGPS (보정 적용중) | 위성 12개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 12개 | HDOP 1.1
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 11개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.4
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.4
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.4
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.4
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.7
+상태: 🟡 GPS only | 위성 14개 | HDOP 1.0
+상태: 🟡 GPS only | 위성 14개 | HDOP 1.0
+상태: 🟡 GPS only | 위성 17개 | HDOP 0.8
+상태: 🟡 GPS only | 위성 17개 | HDOP 0.8
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.5
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 3.2
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 3.2
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 3.2
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 3.2
+상태: 🔵 DGPS (보정 적용중) | 위성 06개 | HDOP 6.1
+상태: 🔵 DGPS (보정 적용중) | 위성 06개 | HDOP 6.1
+상태: 🔵 DGPS (보정 적용중) | 위성 06개 | HDOP 6.1
+상태: 🔵 DGPS (보정 적용중) | 위성 06개 | HDOP 6.1
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.6
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 07개 | HDOP 1.9
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 09개 | HDOP 1.2
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 08개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.3
+상태: 🔵 DGPS (보정 적용중) | 위성 10개 | HDOP 1.3
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 26개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 26개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 25개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 25개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 26개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 26개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 27개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 28개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 29개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 32개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 31개 | HDOP 0.5
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: 🟠 RTK Float | 위성 30개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 26개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 32개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 32개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 32개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 32개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 33개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 33개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 33개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 33개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 32개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 32개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 31개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 30개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 28개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 27개 | HDOP 0.6
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.5
+상태: ✅ RTK Fixed | 위성 29개 | HDOP 0.5
+Traceback (most recent call last):
+  File "/Users/khj/rtk/main.py", line 91, in <module>
+    nmea = RTK.readline()
+           ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/serial/serialposix.py", line 595, in read
+    raise SerialException(
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
