@@ -114,4 +114,72 @@ python main.py
 | `config_um982.py` | GNSS UNMASK + NMEA 출력 복구 |
 | `log_fixed_achieved.txt` | 본 Fixed 달성 원본 로그 |
 | `RTK_트러블슈팅.md` | 진단/운영 가이드 |
+| `RTK_설정저장방법.md` | RELIABILITY 영구 저장 방법 |
+| `save_reliability.py` | RELIABILITY 1 저장 스크립트 |
+| `accuracy_test.py` | 한국 좌표계 cm급 정확도 측정 |
+| `RTK_좌표계_개념정리.md` | 좌표계/데이텀/투영 개념 정리 |
 | `RTK_Fixed_달성기록.md` | (이 문서) Fixed 달성 과정·소요시간 |
+
+---
+
+## 7. 좌표 변환 & 정확도 테스트 (한국 좌표계, cm급)
+
+> 다음 테스트 목표: **한국 좌표계 기준 cm급 정확도 검증.**
+> NMEA 경위도(WGS84)를 한국 공식 좌표계(미터)로 변환한 뒤, 정지 상태 산포를 cm로 측정한다.
+
+### 7-1. 2단계 변환
+
+**① NMEA 형식(ddmm.mmmm) → 십진수 도**
+```
+위도 3728.49542091 = 37° + 28.49542091/60 = 37.47492°N
+경도 12653.21795050 = 126° + 53.21795050/60 = 126.88697°E
+```
+
+**② WGS84(경위도) → 한국 2000 TM 투영(미터)**
+GPS 출력은 WGS84. 한국에서 미터로 쓰려면 **Korea 2000(GRS80) TM** 으로 투영한다. 경도대별 원점:
+
+| 원점대 | 적용 경도 | EPSG |
+|---|---|---|
+| 서부 | 124~126°E | 5185 |
+| **중부** | **126~128°E** | **5186** ← 현장(126.89°E) |
+| 동부 | 128~130°E | 5187 |
+| 동해(울릉) | 130°E~ | 5188 |
+| (전국 단일 / 웹지도) | 전국 | 5179 (UTM-K) |
+
+- 현장 경도 126.89°E → **EPSG:5186 (중부원점)** 사용.
+- 옛 좌표계(Bessel, EPSG:517x)는 구 지적자료용. 신규 측량은 **Korea 2000(518x)**.
+- 데이텀 WGS84 ↔ Korea 2000 차이는 cm급. NGII VRS 보정을 받은 RTK 좌표는 사실상 Korea 2000 기준에 정합.
+
+### 7-2. 변환 코드 (pyproj)
+
+```python
+from pyproj import Transformer
+tf = Transformer.from_crs("EPSG:4326", "EPSG:5186", always_xy=True)  # WGS84 → 중부원점(m)
+
+def nmea_to_deg(v):
+    d = int(v // 100)
+    return d + (v - d*100) / 60
+
+lat = nmea_to_deg(3728.49542091)    # 37.47492
+lon = nmea_to_deg(12653.21795050)   # 126.88697
+x, y = tf.transform(lon, lat)       # ⚠ always_xy=True → (경도, 위도) 순서!
+```
+- `pip install pyproj`
+- 결과 x=동거(E), y=북거(N), 단위 m. 두 점 거리 = √(Δx²+Δy²).
+
+### 7-3. 정확도(cm급) 측정 — `accuracy_test.py`
+
+RTK Fixed 일 때만 위치를 모아 EPSG:5186 로 변환하고 **반복정밀도(scatter)** 를 cm로 출력한다.
+
+```bash
+pip install pyproj
+python accuracy_test.py        # 안테나 고정, Fixed 상태로 1~2분
+```
+출력 예:
+```
+[ 30샘플] 평균 X=198765.432 Y=552314.876 H=37.214 m | 수평σ=  0.8cm (X0.6/Y0.5) 수직σ=  1.5cm
+```
+- **수평σ < ~1cm, 수직σ < ~2cm** 면 RTK Fixed 정상 cm급.
+- 절대 정확도는 `accuracy_test.py` 의 `REF_LAT/REF_LON` 에 **측량된 기준점 참값**을 넣으면 기준점 대비 오차(cm)까지 출력.
+- ⚠ 반복정밀도(σ)='흔들림', 절대정확도='참값과의 거리' — **둘은 다르다.** cm급 *절대* 검증엔 기준점 참값이 필수.
+
