@@ -8,7 +8,8 @@ from collections import Counter
 # COM        = '/dev/tty.usbserial-1440'
 # COM = '/dev/tty.usbserial-130'
 # COM = '/dev/tty.usbserial-2130'
-COM = '/dev/tty.usbserial-21420'
+# COM = '/dev/tty.usbserial-21420'
+COM = '/dev/tty.usbserial-21430'
 BPS        = 460800          # set_baud.py 실행 후 (이전: 115200)
 NtripIP    = 'RTS1.ngii.go.kr'
 NtripPort  = 2101

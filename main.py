@@ -8,7 +8,8 @@ import threading
 # COM       = '/dev/tty.usbserial-1440'        # Linux: /dev/ttyUSB0, Windows: COM15
 # COM = '/dev/tty.usbserial-130'
 # COM = '/dev/tty.usbserial-2130'
-COM = '/dev/tty.usbserial-21420'
+# COM = '/dev/tty.usbserial-21420'
+COM = '/dev/tty.usbserial-21430'
 BPS       = 460800          # set_baud.py 로 수신기 속도 변경 후 사용 (115200 은 보정량 초과로 RTK 불가)
 NtripIP    = 'RTS1.ngii.go.kr'
 NtripPort  = 2101
@@ -35,16 +36,8 @@ while strGNGGA is None:
         strGNGGA = line + "\r\n"
         print(f"GGA 수신: {strGNGGA.strip()}")
 
-# 2. NTRIP 접속
-print(f"NTRIP 서버 접속 중: {NtripIP}:{NtripPort}/{NtripPoint}")
-ntrip = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-ntrip.connect((NtripIP, NtripPort))
-ntrip.settimeout(5)                  # ← 블로킹 방지
-
-user_pwd = base64.b64encode(
-    f"{NtripUser}:{NtripPwd}".encode()
-).decode()
-
+# 2. NTRIP 접속 (함수화 — 끊기면 재접속에 재사용)
+user_pwd = base64.b64encode(f"{NtripUser}:{NtripPwd}".encode()).decode()
 httpHead = (
     f"GET /{NtripPoint} HTTP/1.0\r\n"
     f"User-Agent: NTRIP PythonClient/1.0\r\n"
@@ -52,35 +45,58 @@ httpHead = (
     f"Connection: close\r\n"
     f"Authorization: Basic {user_pwd}\r\n\r\n"
 )
-ntrip.send(httpHead.encode())
 
-# 서버 응답 확인
-resp = ntrip.recv(1024).decode("ascii", errors="ignore")
-print(f"서버 응답: {resp[:50]}")
-if "200 OK" not in resp and "ICY 200 OK" not in resp:
-    print("❌ NTRIP 접속 실패. 계정/마운트포인트 확인 필요")
-    exit()
+latest_gga = strGNGGA      # 메인 루프가 최신 GGA로 갱신 → 재접속 시 사용
 
-# GGA 전송 (서버가 근처 RTCM 선택하도록)
-ntrip.send(strGNGGA.encode())
+def connect_ntrip():
+    """NTRIP 서버에 접속해 핸드셰이크 + GGA 전송. 실패 시 None."""
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.settimeout(5)
+        s.connect((NtripIP, NtripPort))
+        s.send(httpHead.encode())
+        resp = s.recv(1024).decode("ascii", errors="ignore")
+        if "200 OK" not in resp and "ICY 200 OK" not in resp:
+            print(f"❌ NTRIP 응답 이상: {resp[:50]}")
+            s.close()
+            return None
+        s.send(latest_gga.encode())
+        return s
+    except Exception as e:
+        print(f"⚠️  NTRIP 접속 실패: {e}")
+        return None
+
+print(f"NTRIP 서버 접속 중: {NtripIP}:{NtripPort}/{NtripPoint}")
+ntrip = connect_ntrip()
+while ntrip is None:           # 최초 접속도 될 때까지 재시도
+    time.sleep(2)
+    print("…NTRIP 재시도")
+    ntrip = connect_ntrip()
 print("✅ NTRIP 접속 성공. RTCM 수신 시작...")
 
-# 3. RTCM 보정 전달 스레드 (도착 즉시 모듈로 흘려보내 latency 최소화)
+# 3. RTCM 보정 전달 스레드 (끊기면 자동 재접속)
 def rtcm_forwarder():
+    global ntrip
     while True:
         try:
             rtcm = ntrip.recv(4096)
             if rtcm:
                 RTK.write(rtcm)
             else:
-                # recv가 빈 바이트 → 서버가 연결 종료
-                print("⚠️  NTRIP 연결이 서버에 의해 종료됨")
-                break
+                raise ConnectionError("서버가 연결 종료(빈 응답)")
         except socket.timeout:
             continue
         except Exception as e:
-            print(f"⚠️  RTCM 수신 오류: {e}")
-            break
+            print(f"⚠️  RTCM 끊김({e}) → 재접속 시도")
+            try:
+                ntrip.close()
+            except Exception:
+                pass
+            time.sleep(2)
+            new = connect_ntrip()
+            if new is not None:
+                ntrip = new
+                print("🔄 NTRIP 재접속 성공")
 
 threading.Thread(target=rtcm_forwarder, daemon=True).start()
 
@@ -108,9 +124,16 @@ while True:
             }.get(fix_type, f'? ({fix_type})')
             print(f"상태: {status} | 위성 {num_sat}개 | HDOP {hdop}")
 
+            # 재접속 시 사용할 최신 GGA 갱신
+            if fix_type not in ('', '0'):
+                latest_gga = line + "\r\n"
+
             # 10초마다 GGA 재전송 (VRS가 가상기준국을 최신 위치로 유지)
             if time.time() - gga_timer > 10:
-                ntrip.send((line + "\r\n").encode())
+                try:
+                    ntrip.send((line + "\r\n").encode())
+                except Exception:
+                    pass            # 끊김은 forwarder 스레드가 재접속 처리
                 gga_timer = time.time()
     except Exception:
         pass

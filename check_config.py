@@ -7,7 +7,8 @@ import time
 
 # COM = '/dev/tty.usbserial-130'   # 실제 포트로 맞출 것
 # COM = '/dev/tty.usbserial-2130'
-COM = '/dev/tty.usbserial-21420'
+# COM = '/dev/tty.usbserial-21420'
+COM = '/dev/tty.usbserial-21430'
 BPS = 460800
 
 ser = serial.Serial(COM, BPS, timeout=1)
